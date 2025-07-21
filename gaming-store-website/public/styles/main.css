@@ -1,0 +1,520 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+/* Navbar and header styling with Zonix brand colors */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #1e90ff 60%, #6c2eb6 100%);
+    color: #fff;
+    padding: 14px 36px;
+    box-shadow: 0 4px 12px rgba(44, 0, 84, 0.6);
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    color: #fff;
+    text-shadow: 0 0 12px #6c2eb6, 0 0 24px #1e90ff;
+    font-family: 'Segoe UI Black', Arial Black, sans-serif;
+}
+
+nav a {
+    color: #e0e0ff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 18px;
+    border-radius: 6px;
+    transition: background 0.3s, color 0.3s;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    background: #fff;
+    color: #6c2eb6;
+    box-shadow: 0 0 8px #1e90ff;
+}
+
+/* Buttons with animations and hover effects */
+button, .search-btn {
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(44, 0, 84, 0.6);
+}
+
+button:hover, .search-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px #1e90ff;
+}
+
+.shop-btn {
+    background: #1e90ff;
+    color: #fff;
+    padding: 16px 40px;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px #6c2eb6;
+}
+
+.shop-btn:hover {
+    background: #6c2eb6;
+    box-shadow: 0 8px 24px #1e90ff;
+}
+
+/* Category cards styling */
+.category-card {
+    background: #1e1a2f;
+    border: 2px solid #6c2eb6;
+    border-radius: 14px;
+    padding: 36px 48px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #e0e0ff;
+    box-shadow: 0 4px 16px rgba(44, 0, 84, 0.4);
+    cursor: pointer;
+    transition: box-shadow 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.category-card:hover {
+    box-shadow: 0 6px 24px #1e90ff;
+    border-color: #1e90ff;
+    color: #1e90ff;
+}
+
+/* Product card styling */
+.product-card {
+    background: #1e1a2f;
+    border: 2px solid #2d0b4e;
+    border-radius: 16px;
+    padding: 36px 48px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #e0e0ff;
+    box-shadow: 0 6px 20px rgba(44, 0, 84, 0.5);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 36px #1e90ff;
+}
+
+.product-img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    background: #222;
+    box-shadow: 0 4px 16px rgba(44, 0, 84, 0.4);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Footer styling */
+footer {
+    background: linear-gradient(90deg, #1e90ff 60%, #6c2eb6 100%);
+    color: #fff;
+    padding: 28px 36px;
+    text-align: center;
+    border-radius: 24px 24px 0 0;
+    margin-top: 48px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+.footer-links a {
+    color: #e0e0ff;
+    margin: 0 16px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #1e90ff;
+    text-decoration: underline;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 0 2px 8px #1e90ff;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover {
+    background: #6c2eb6;
+    color: #1e90ff;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.search-bar input {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #6c2eb6;
+    width: 180px;
+    background: #181818;
+    color: #fff;
+}
+
+.search-btn {
+    padding: 8px 18px;
+    background: #6c2eb6;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.search-btn:hover {
+    background: #1e90ff;
+    color: #fff;
+}
+
+.account a {
+    color: #fff;
+    margin-left: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.account a:hover {
+    color: #6c2eb6;
+}
+
+.hero {
+    background: linear-gradient(90deg, #2d0b4e 60%, #1e90ff 100%);
+    color: #fff;
+    padding: 48px 36px;
+    text-align: center;
+    border-radius: 0 0 24px 24px;
+    box-shadow: 0 4px 24px rgba(44, 0, 84, 0.12);
+}
+
+.shop-btn {
+    margin-top: 22px;
+    padding: 14px 36px;
+    background: #1e90ff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #6c2eb6;
+    transition: background 0.2s;
+}
+
+.shop-btn:hover {
+    background: #6c2eb6;
+}
+
+.categories {
+    margin: 44px 0 24px 0;
+    padding: 0 36px;
+}
+
+.category-list {
+    display: flex;
+    gap: 24px;
+    margin-top: 18px;
+}
+
+.category-card {
+    background: #181818;
+    border: 2px solid #6c2eb6;
+    border-radius: 10px;
+    padding: 32px 44px;
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: #fff;
+    box-shadow: 0 2px 12px rgba(44, 0, 84, 0.10);
+    cursor: pointer;
+    transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.category-card:hover {
+    box-shadow: 0 4px 18px #1e90ff;
+    border-color: #1e90ff;
+    color: #1e90ff;
+}
+
+.featured {
+    padding: 0 36px 44px 36px;
+}
+
+.product-list {
+    display: flex;
+    gap: 24px;
+    margin-top: 18px;
+}
+
+.product-card {
+    background: #181818;
+    border: 2px solid #2d0b4e;
+    border-radius: 10px;
+    padding: 32px 44px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    box-shadow: 0 2px 12px rgba(44, 0, 84, 0.10);
+    text-align: center;
+}
+
+.product-img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    background: #222;
+    box-shadow: 0 2px 8px rgba(44, 0, 84, 0.10);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.placeholder {
+    color: #6c2eb6;
+    font-style: italic;
+}
+
+footer {
+    background: linear-gradient(90deg, #2d0b4e 60%, #1e90ff 100%);
+    color: #fff;
+    padding: 22px 36px;
+    text-align: center;
+    border-radius: 24px 24px 0 0;
+    margin-top: 32px;
+}
+
+.footer-links {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 14px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: #6c2eb6;
+    text-decoration: underline;
+}
+
+.preview-btn, .cart-btn {
+    margin: 8px 6px 0 0;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.preview-btn {
+    background: #6c2eb6;
+    color: #fff;
+}
+
+.preview-btn:hover {
+    background: #1e90ff;
+}
+
+.cart-btn {
+    background: #1e90ff;
+    color: #fff;
+}
+
+.cart-btn:hover {
+    background: #6c2eb6;
+}
+
+.cart-count {
+    margin-top: 18px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1e90ff;
+}
+
+.product-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    background: #0a0a0a;
+}
+
+.product-box {
+    display: flex;
+    flex-direction: row;
+    background: #181818;
+    border: 2px solid #6c2eb6;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(44, 0, 84, 0.12);
+    padding: 36px;
+    gap: 36px;
+    align-items: center;
+    max-width: 700px;
+}
+
+.product-img-large {
+    width: 240px;
+    height: 240px;
+    object-fit: contain;
+    border-radius: 12px;
+    background: #222;
+    box-shadow: 0 2px 12px rgba(44, 0, 84, 0.10);
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    color: #fff;
+}
+
+.product-info h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #6c2eb6;
+}
+
+.price {
+    color: #1e90ff;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin: 8px 0;
+}
+
+.buy-btn {
+    padding: 12px 28px;
+    background: #6c2eb6;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+.buy-btn:hover {
+    background: #1e90ff;
+}
+
+/* Modal styles for product preview - comfortable and attractive for customers */
+#preview-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#modal-content {
+    background: linear-gradient(135deg, #2d0b4e, #1e90ff);
+    padding: 25px 30px;
+    border-radius: 16px;
+    max-width: 420px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(30, 144, 255, 0.6);
+    transition: transform 0.3s ease;
+}
+
+#modal-content:hover {
+    transform: scale(1.02);
+}
+
+#modal-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    color: #ffffff;
+    text-shadow: 0 0 8px #6c2eb6;
+}
+
+#modal-content p {
+    font-size: 1.2rem;
+    margin-bottom: 18px;
+    color: #e0e0ff;
+}
+
+#modal-content img {
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(44, 0, 84, 0.8);
+    margin-bottom: 20px;
+}
+
+#modal-content button {
+    margin-top: 20px;
+    padding: 12px 28px;
+    background-color: #6c2eb6;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 4px 12px #1e90ff;
+    transition: background-color 0.3s ease;
+}
+
+#modal-content button:hover {
+    background-color: #1e90ff;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر الألعاب</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="navbar" id="navbar">
+        <div class="logo">
+            <h1>متجر الألعاب</h1>
+        </div>
+        <nav>
+            <a href="#">الرئيسية</a>
+            <a href="#">المتجر</a>
+            <a href="#">العروض</a>
+            <a href="#">السلة</a>
+            <a href="#">اتصل بنا</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="ابحث عن الألعاب...">
+            <button class="search-btn" id="searchBtn">بحث</button>
+        </div>
+        <div class="account">
+            <a href="#">تسجيل الدخول</a>
+            <a href="#">الطلبات</a>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>مرحبًا بك في متجر الألعاب!</h2>
+            <p>اكتشف أفضل العروض على ألعابك وأجهزتك المفضلة.</p>
+            <button class="shop-btn">تسوق الآن</button>
+        </section>
+        <section class="categories">
+            <h3>تسوق حسب الفئة</h3>
+            <div class="category-list" id="categoryList">
+                <div class="category-card" data-category="SSD داخلي NVMe GEN5">SSD داخلي NVMe GEN5</div>
+                <div class="category-card" data-category="هارد داخلي SATA">هارد داخلي SATA</div>
+                <div class="category-card" data-category="هارد خارجي USB3">هارد خارجي USB3</div>
+                <div class="category-card" data-category="SSD خارجي تايب سي / USB">SSD خارجي تايب سي / USB</div>
+                <div class="category-card" data-category="RAM DDR5">RAM DDR5</div>
+                <div class="category-card" data-category="مزودات الطاقة PSU">مزودات الطاقة PSU</div>
+                <div class="category-card" data-category="مبردات AIO / هوائي">مبردات AIO / هوائي</div>
+                <div class="category-card" data-category="كيبوردات ميكانيكية">كيبوردات ميكانيكية</div>
+                <div class="category-card" data-category="ماوسات">ماوسات</div>
+                <div class="category-card" data-category="كيسات تجميعات">كيسات تجميعات</div>
+                <div class="category-card" data-category="مراوح تبريد">مراوح تبريد</div>
+                <div class="category-card" data-category="صوتيات">صوتيات</div>
+                <div class="category-card" data-category="وحدة تخزين شبكية NAS">وحدة تخزين شبكية NAS</div>
+                <div class="category-card" data-category="ستاندات وترايبود">ستاندات وترايبود</div>
+                <div class="category-card" data-category="متفرقات">متفرقات</div>
+                <div class="category-card" data-category="كروت الشاشة">كروت الشاشة</div>
+            </div>
+        </section>
+
+        <div id="sidebar-filters" style="margin: 20px 36px;">
+            <h3>تصفية المنتجات</h3>
+            <div>
+                <label for="priceRange">السعر حتى:</label>
+                <input type="range" id="priceRange" min="0" max="40000" step="500" value="40000" />
+                <span id="priceValue">40000</span> جنيه
+            </div>
+            <div>
+                <label><input type="checkbox" id="conditionNew" checked /> جديد</label>
+                <label><input type="checkbox" id="conditionReview" checked /> ريفيو</label>
+            </div>
+        </div>
+
+        <div id="product-container"></div>
+        <div id="cart-count" class="cart-count">السلة: <span id="cartNum">0</span></div>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="#">سياسة الخصوصية</a>
+            <a href="#">شروط الاستخدام</a>
+            <a href="#">المساعدة</a>
+        </div>
+        <p>&copy; 2025 متجر الألعاب</p>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

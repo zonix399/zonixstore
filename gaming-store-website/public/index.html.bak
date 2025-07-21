@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر الألعاب</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <h1>متجر الألعاب</h1>
+        </div>
+        <nav>
+            <a href="#">الرئيسية</a>
+            <a href="#">المتجر</a>
+            <a href="#">العروض</a>
+            <a href="#">السلة</a>
+            <a href="#">اتصل بنا</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="ابحث عن الألعاب...">
+            <button class="search-btn">بحث</button>
+        </div>
+        <div class="account">
+            <a href="#">تسجيل الدخول</a>
+            <a href="#">الطلبات</a>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>مرحبًا بك في متجر الألعاب!</h2>
+            <p>اكتشف أفضل العروض على ألعابك وأجهزتك المفضلة.</p>
+            <button class="shop-btn">تسوق الآن</button>
+        </section>
+        <section class="categories">
+            <h3>تسوق حسب الفئة</h3>
+            <div class="category-list">
+                <div class="category-card">SSD داخلي NVMe GEN5</div>
+                <div class="category-card">هارد داخلي SATA</div>
+                <div class="category-card">هارد خارجي USB3</div>
+                <div class="category-card">SSD خارجي تايب سي / USB</div>
+                <div class="category-card">RAM DDR5</div>
+                <div class="category-card">مزودات الطاقة PSU</div>
+                <div class="category-card">مبردات AIO / هوائي</div>
+                <div class="category-card">كيبوردات ميكانيكية</div>
+                <div class="category-card">ماوسات</div>
+                <div class="category-card">كيسات تجميعات</div>
+                <div class="category-card">مراوح تبريد</div>
+                <div class="category-card">صوتيات</div>
+                <div class="category-card">وحدة تخزين شبكية NAS</div>
+                <div class="category-card">ستاندات وترايبود</div>
+                <div class="category-card">متفرقات</div>
+                <div class="category-card">كروت الشاشة</div>
+            </div>
+        </section>
+
+        <!-- SSD داخلي NVMe GEN5 -->
+        <section class="featured">
+            <h3>SSD داخلي NVMe GEN5</h3>
+            <div class="product-list">
+                <div class="product-card">
+                    <h4>XPG MARS BLADE 980 - 2TB</h4>
+                    <p>💵 13000 جنيه</p>
+                    <button class="preview-btn" onclick="previewItem('XPG MARS BLADE 980 - 2TB')">معاينة</button>
+                    <button class="cart-btn" onclick="addToCart()">أضف إلى السلة</button>
+                </div>
+                <div class="product-card">
+                    <h4>ADATA LEGEND 970 - 1TB</h4>
+                    <p>💵 8000 جنيه</p>
+                    <button class="preview-btn" onclick="previewItem('ADATA LEGEND 970 - 1TB')">معاينة</button>
+                    <button class="cart-btn" onclick="addToCart()">أضف إلى السلة</button>
+                </div>
+                <div class="product-card">
+                    <h4>T FORCE Z540 - 1TB</h4>
+                    <p>💵 8000 جنيه</p>
+                    <button class="preview-btn" onclick="previewItem('T FORCE Z540 - 1TB')">معاينة</button>
+                    <button class="cart-btn" onclick="addToCart()">أضف إلى السلة</button>
+                </div>
+                <div class="product-card">
+                    <h4>XPG GAMMIX S55 - 2230 - 1TB</h4>
+                    <p>💵 5000 جنيه</p>
+                    <button class="preview-btn" onclick="previewItem('XPG GAMMIX S55 - 2230 - 1TB')">معاينة</button>
+                    <button class="cart-btn" onclick="addToCart()">أضف إلى السلة</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- هارد داخلي SATA -->
+        <section class="featured">
+            <h3>هارد داخلي SATA</h3>
+            <div class="product-list">
+                <div class="product-card">
+                    <h4>BARRACUDA - 500GB - 7200RPM</h4>
+                    <p>💵 525 جنيه</p>
+                    <button class="preview-btn" onclick="previewItem('BARRACUDA - 500GB - 7200RPM')">معاينة</button>
+                    <button class="cart-btn" onclick="addToCart()">أضف إلى السلة</button>
+                </div>
+                <div class="product-card">
+                    <h4>WD BLUE - 1TB - 7200RPM</h4>
+                    <p>💵 2200 جنيه</p>
+                    <button class="preview-btn" onclick="previewItem('WD BLUE - 1TB - 7200RPM')">معاينة</button>
+                    <button class="cart-btn" onclick="addToCart()">أضف إلى السلة</button>
+                </div>
+                <div class="product-card">
+                    <h4>BARRACUDA - 2TB - 7200RPM</h4>
+                    <p>💵 2700 جنيه</p>
+                    <button class="preview-btn" onclick="previewItem('BARRACUDA - 2TB - 7200RPM')">معاينة</button>
+                    <button class="cart-btn" onclick="addToCart()">أضف إلى السلة</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- هارد خارجي USB3 -->
+        <section class="featured">
+            <h3>هارد خارجي USB3</h3>
+            <div class="product-list">
+                <div class="product-card">
+                    <h4>WD - 1TB - EXTERNAL</h4>
+                    <p>💵 1800 جنيه</p>
+                    <button class="preview-btn" onclick="previewItem('WD - 1TB - EXTERNAL')">معاينة</button>
+                    <button class="cart-btn" onclick="addToCart()">أضف إلى السلة</button>
+                </div>
+                <div class="product-card">
+                    <h4>WD - 4TB - EXTERNAL</h4>
+                    <p>💵 4200 جنيه</p>
+                    <button class="preview-btn" onclick="previewItem('WD - 4TB - EXTERNAL')">معاينة</button>
+                    <button class="cart-btn" onclick="addToCart()">أضف إلى السلة</button>
+                </div>
+                <div class="product-card">
+                    <h4>WD ELEMENTS - 14TB</h4>
+                    <p>💵 16000 جنيه</p>
+                    <button class="preview-btn" onclick="previewItem('WD ELEMENTS - 14TB')">معاينة</button>
+                    <button class="cart-btn" onclick="addToCart()">أضف إلى السلة</button>
+                </div>
+                <div class="product-card">
+                    <h4>SEAGATE EXPANSION - 28TB</h4>
+                    <p>💵 37000 جنيه</p>
+                    <button class="preview-btn" onclick="previewItem('SEAGATE EXPANSION - 28TB')">معاينة</button>
+                    <button class="cart-btn" onclick="addToCart()">أضف إلى السلة</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SSD خارجي تايب سي / USB -->
+        <section class="featured">
+            <h3>SSD خارجي تايب سي / USB</h3>
+            <div class="product-list">
+                <div class="product-card">
+                    <h4>ADATA UE800 - 500GB</h4>
+                    <p>💵 3000 جنيه</p>
+                    <button class="preview-btn" onclick="previewItem('ADATA UE800 - 500GB')">معاينة</button>
+                    <button class="cart-btn" onclick="addToCart()">أضف إلى السلة</button>
+                </div>
+                <div class="product-card">
+                    <h4>ADATA SC610 - 500GB</h4>
+                    <p>💵 3000 جنيه</p>
+                    <button class="preview-btn" onclick="previewItem('ADATA SC610 - 500GB')">معاينة</button>
+                    <button class="cart-btn" onclick="addToCart()">أضف إلى السلة</button>
+                </div>
+                <div class="product-card">
+                    <h4>ADATA SD620 - 500GB</h4>
+                    <p>💵 3000 جنيه</p>
+                    <button class="preview-btn" onclick="previewItem('ADATA SD620 - 500GB')">معاينة</button>
+                    <button class="cart-btn" onclick="addToCart()">أضف إلى السلة</button>
+                </div>
+                <div class="product-card">
+                    <h4>ADATA SC750 - 1TB</h4>
+                    <p>💵 4000 جنيه</p>
+                    <button class="preview-btn" onclick="previewItem('ADATA SC750 - 1TB')">معاينة</button>
+                    <button class="cart-btn" onclick="addToCart()">أضف إلى السلة</button>
+                </div>
+                <div class="product-card">
+                    <h4>SABRENT ROCKET NANO - 1TB</h4>
+                    <p>💵 4500 جنيه</p>
+                    <button class="preview-btn" onclick="previewItem('SABRENT ROCKET NANO - 1TB')">معاينة</button>
+                    <button class="cart-btn" onclick="addToCart()">أضف إلى السلة</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- كروت الشاشة -->
+        <section class="featured">
+            <h3>كروت الشاشة</h3>
+            <div class="product-list">
+                <div class="product-card">
+                    <img src="images/RTX 5070 Gigabyte Windforce SFF 12GB.jpg" alt="RTX 5070 Gigabyte Windforce SFF 12GB" class="product-img">
+                    <h4>RTX 5070 Gigabyte Windforce SFF 12GB</h4>
+                    <p>💵 35500 جنيه</p>
+                    <button class="preview-btn" onclick="previewItem('RTX 5070 Gigabyte Windforce SFF 12GB')">معاينة</button>
+                    <button class="cart-btn" onclick="addToCart()">أضف إلى السلة</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- يمكنك متابعة إضافة باقي الأقسام والمنتجات بنفس الطريقة -->
+        <div id="cart-count" class="cart-count">السلة: <span id="cartNum">0</span></div>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="#">سياسة الخصوصية</a>
+            <a href="#">شروط الاستخدام</a>
+            <a href="#">المساعدة</a>
+        </div>
+        <p>&copy; 2025 متجر الألعاب</p>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

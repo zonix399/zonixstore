@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WD BLUE - 1TB - 7200RPM - Zonix</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <script>
+        function addToCart(productId, productName) {
+            alert(`تمت إضافة ${productName} إلى السلة!`);
+        }
+        function buyNow(productName) {
+            alert(`تم اختيار شراء ${productName} الآن!`);
+        }
+    </script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <h1>Zonix</h1>
+        </div>
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="index.html#product-container">المتجر</a>
+            <a href="#">العروض</a>
+            <a href="#">السلة</a>
+            <a href="#">اتصل بنا</a>
+        </nav>
+    </header>
+    <main>
+        <section class="product-detail">
+            <button id="closeBtn" style="position: absolute; top: 20px; right: 20px; background: #6c2eb6; color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 24px; cursor: pointer;">×</button>
+            <div class="product-box" style="display: flex; gap: 40px; align-items: flex-start; background: #121212; border-radius: 20px; padding: 30px; box-shadow: 0 0 30px #6c2eb6;">
+                <div class="image-box" style="flex: 1; max-width: 400px; border: 2px solid #6c2eb6; border-radius: 16px; padding: 10px; background: #181818; box-shadow: 0 0 20px #1e90ff;">
+                    <img src="images/RTX-5070-windforce-4.jpg" alt="WD BLUE - 1TB - 7200RPM" class="product-img-large" style="width: 100%; border-radius: 12px;" />
+                </div>
+                <div class="product-info" style="flex: 2; color: #ddd;">
+                    <h2 id="product-name" style="color: #6c2eb6; text-shadow: 0 0 10px #1e90ff;">WD BLUE - 1TB - 7200RPM</h2>
+                    <p id="product-description" style="font-size: 1.1rem; line-height: 1.5; margin-bottom: 20px;">جديد متبرشم
+السعر الحالي: 2,200 ج
+السعر الأصلي: 2,500 ج
+الخصم: 300 ج</p>
+                    <p class="price" id="product-price" style="font-weight: bold; font-size: 1.5rem; color: #1e90ff; margin-bottom: 20px;">💵 2,200 جنيه</p>
+                    <button class="buy-btn" onclick="buyNow(document.getElementById('product-name').textContent)" style="margin-right: 10px;">اشتري الآن</button>
+                    <button class="buy-btn" onclick="addToCart(null, document.getElementById('product-name').textContent)">أضف إلى السلة</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="#">سياسة الخصوصية</a>
+            <a href="#">شروط الاستخدام</a>
+            <a href="#">المساعدة</a>
+        </div>
+        <p>&copy; 2025 Zonix</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTX 5070 Gigabyte Windforce SFF 12GB</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        .product-detail {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 70vh;
+            background: #0a0a0a;
+        }
+        .product-box {
+            display: flex;
+            flex-direction: row;
+            background: #181818;
+            border: 2px solid #6c2eb6;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(44, 0, 84, 0.12);
+            padding: 36px;
+            gap: 36px;
+            align-items: flex-start;
+            max-width: 900px;
+        }
+        .product-gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+        .product-img-large {
+            width: 320px;
+            height: 320px;
+            object-fit: contain;
+            border-radius: 12px;
+            background: #222;
+            box-shadow: 0 2px 12px rgba(44, 0, 84, 0.10);
+        }
+        .product-thumbs {
+            display: flex;
+            gap: 10px;
+            margin-top: 8px;
+        }
+        .product-img-thumb {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            border-radius: 6px;
+            background: #222;
+            box-shadow: 0 1px 4px rgba(44, 0, 84, 0.10);
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border 0.2s;
+        }
+        .product-img-thumb.active,
+        .product-img-thumb:hover {
+            border: 2px solid #1e90ff;
+        }
+        .product-info {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            color: #fff;
+            min-width: 320px;
+        }
+        .product-info h2 {
+            margin: 0;
+            font-size: 2rem;
+            color: #6c2eb6;
+        }
+        .price {
+            color: #1e90ff;
+            font-weight: bold;
+            font-size: 1.3em;
+            margin: 8px 0;
+        }
+        .desc {
+            color: #ccc;
+            font-size: 1.1em;
+            margin-bottom: 12px;
+        }
+        .cart-btn, .buy-btn {
+            padding: 12px 28px;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            color: #fff;
+            font-size: 1.1rem;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.2s;
+        }
+        .cart-btn {
+            background: #1e90ff;
+            margin-left: 8px;
+        }
+        .cart-btn:hover {
+            background: #6c2eb6;
+        }
+        .buy-btn {
+            background: #6c2eb6;
+        }
+        .buy-btn:hover {
+            background: #1e90ff;
+        }
+        .specs-table {
+            background: #222;
+            border-radius: 8px;
+            margin-top: 18px;
+            padding: 16px;
+            color: #fff;
+            font-size: 1em;
+        }
+        .specs-table th, .specs-table td {
+            padding: 6px 12px;
+        }
+        .specs-table th {
+            color: #6c2eb6;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <h1>متجر الألعاب</h1>
+        </div>
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="#">المتجر</a>
+            <a href="#">العروض</a>
+            <a href="#">السلة</a>
+            <a href="#">اتصل بنا</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="ابحث عن الألعاب...">
+            <button class="search-btn">بحث</button>
+        </div>
+        <div class="account">
+            <a href="#">تسجيل الدخول</a>
+            <a href="#">الطلبات</a>
+        </div>
+    </header>
+    <main>
+        <section class="product-detail">
+            <div class="product-box">
+                <div class="product-gallery">
+                    <img id="mainImg" src="images/RTX-5070-windforce.jpg" alt="RTX 5070 Gigabyte Windforce SFF 12GB" class="product-img-large">
+                    <div class="product-thumbs">
+                        <img src="images/RTX-5070-windforce.jpg" alt="صورة 1" class="product-img-thumb active" onclick="changeImg(this)">
+                        <img src="images/RTX-5070-windforce-2.jpg" alt="صورة 2" class="product-img-thumb" onclick="changeImg(this)">
+                        <img src="images/RTX-5070-windforce-3.jpg" alt="صورة 3" class="product-img-thumb" onclick="changeImg(this)">
+                        <img src="images/RTX-5070-windforce-4.jpg" alt="صورة 4" class="product-img-thumb" onclick="changeImg(this)">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h2>RTX 5070 Gigabyte Windforce SFF 12GB</h2>
+                    <p class="price">💵 35500 جنيه</p>
+                    <p class="desc">
+                        كارت شاشة قوي للألعاب بدقة عالية، ذاكرة 12 جيجابايت، تبريد Windforce SFF، مثالي لتجميعات الجيمنج الحديثة.
+                    </p>
+                    <button class="cart-btn" onclick="addToCart()">أضف إلى السلة</button>
+                    <button class="buy-btn">اشتري الآن</button>
+                    <table class="specs-table">
+                        <tr><th>الموديل</th><td>RTX 5070 Gigabyte Windforce SFF</td></tr>
+                        <tr><th>الذاكرة</th><td>12GB GDDR6X</td></tr>
+                        <tr><th>نوع التبريد</th><td>Windforce SFF</td></tr>
+                        <tr><th>الضمان</th><td>سنة</td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="#">سياسة الخصوصية</a>
+            <a href="#">شروط الاستخدام</a>
+            <a href="#">المساعدة</a>
+        </div>
+        <p>&copy; 2025 متجر الألعاب</p>
+    </footer>
+    <script>
+        function changeImg(el) {
+            document.getElementById('mainImg').src = el.src;
+            document.querySelectorAll('.product-img-thumb').forEach(img => img.classList.remove('active'));
+            el.classList.add('active');
+        }
+    </script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

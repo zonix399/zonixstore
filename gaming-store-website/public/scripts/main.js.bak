@@ -1,0 +1,11 @@
+let cartNum = 0;
+
+function addToCart() {
+    cartNum++;
+    document.getElementById('cartNum').textContent = cartNum;
+    alert('تمت إضافة المنتج إلى السلة!');
+}
+
+function previewItem(title) {
+    alert('معاينة المنتج: ' + title);
+}
